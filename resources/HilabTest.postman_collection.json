@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "c7437235-8020-4476-bfb4-ff88dbdf0e2d",
+		"name": "HilabTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\" : \"Jamil\",\r\n    \"surName\" : \"gz\",\r\n    \"email\" : \"bemvindo@gmail.com\",\r\n    \"birthDate\" : \"05/03/2005\",\r\n    \"job\" : \"DEVELOPER\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\" : \"Renatinho\",\r\n    \"surName\" : \"Gaucho\",\r\n    \"email\" : \"bemvindo@gmail.com\",\r\n    \"birthDate\" : \"10/10/1996\",\r\n    \"job\" : \"DBA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "firstName",
+							"value": "Carlos",
+							"disabled": true
+						},
+						{
+							"key": "surName",
+							"value": "Rafael",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "Caug@gmail.com",
+							"disabled": true
+						},
+						{
+							"key": "job",
+							"value": "DBA",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
